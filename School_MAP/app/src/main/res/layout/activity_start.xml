@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    >
+
+    <!--<pl.droidsonroids.gif.GifImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="500dp"-->
+    <!--android:background="@drawable/flower"-->
+
+    <!--/>-->
+
+
+    <!--<TextView-->
+        <!--android:text="课程表"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/textView3"-->
+        <!--tools:ignore="HardcodedText" />-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ScrollViewSize">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="6"
+        android:rowCount="9"
+        android:orientation="horizontal"
+        android:id="@+id/gradlayout_id"
+        tools:ignore="ScrollViewSize">
+
+
+    <Button
+        android:text="導入課程"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText"
+
+        android:id="@+id/set" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星期一"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_Monday"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星期二"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_Tuesday"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星期三"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_Wednesday"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星期四"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_Thursday"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星期五"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_Friday"
+            />
+
+        <!--09:00-10:20-->
+        <!--&lt;!&ndash;[S105]软件工程\n(薛建民_0978)\nBOU01教学班&ndash;&gt;格式-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第1节-第2节\n09:00-10:20"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText"
+            android:textSize="14sp"
+            android:id="@+id/b_09_00T10_20"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_Monday_1_2"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:text=""
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_Tuesday_1_2"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_Wednesday_1_2"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_Thursday_1_2"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_Friday_1_2"
+            />
+
+        <!--10:40-12:00-->
+        <!--&lt;!&ndash;[S105]软件工程\n(薛建民_0978)\nBOU01教学班&ndash;&gt;格式-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第3节-第4节\n10:40-12:00"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_10_40T12_00"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_rowSpan="2"
+            android:id="@+id/b_Monday_3_4"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:text=""
+            android:id="@+id/b_Tuesday_3_4"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Wednesday_3_4"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Thursday_3_4"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Friday_3_4"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+
+        <!--12:30-13:50-->
+        <!--&lt;!&ndash;[S105]软件工程\n(薛建民_0978)\nBOU01教学班&ndash;&gt;格式-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第5节-第6节\n12:30-13:50\n(週五)\n13:20-14:40"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_12_30T13_50"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Monday_5_6"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:text=""
+            android:id="@+id/b_Tuesday_5_6"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Wednesday_5_6"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Thursday_5_6"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Friday_5_6"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+
+        <!--14:00-15:20-->
+        <!--&lt;!&ndash;[S105]软件工程\n(薛建民_0978)\nBOU01教学班&ndash;&gt;格式-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第7节-第8节\n14:00-15:20\n(週五)\n14:50-16:20"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_14_00T15_20"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Monday_7_8"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:text=""
+            android:id="@+id/b_Tuesday_7_8"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Wednesday_7_8"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Thursday_7_8"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Friday_7_8"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+
+        <!--15:30-16:50-->
+        <!--&lt;!&ndash;[S105]软件工程\n(薛建民_0978)\nBOU01教学班&ndash;&gt;格式-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第9节-第10节\n15:30-16:50\n(週五)\n16:30-17:30"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_15_30T16_50"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Monday_9_10"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:text=""
+            android:id="@+id/b_Tuesday_9_10"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Wednesday_9_10"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Thursday_9_10"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Friday_9_10"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+
+        <!--17:00-18:20-->
+        <!--&lt;!&ndash;[S105]软件工程\n(薛建民_0978)\nBOU01教学班&ndash;&gt;格式-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第11节-第12节\n17:00-18:20\n(週五)\n17:40-18:10"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_17_00T18_20"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Monday_11_12"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:text=""
+            android:id="@+id/b_Tuesday_11_12"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Wednesday_11_12"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Thursday_11_12"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Friday_11_12"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+
+        <!--19:00-20:20-->
+        <!--&lt;!&ndash;[S105]软件工程\n(薛建民_0978)\nBOU01教学班&ndash;&gt;格式-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第13节-第14节\n19:00-20:20\n(週五)\n18:20-19:40"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_19_00_20_20"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Monday_13_14"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:text=""
+            android:id="@+id/b_Tuesday_13_14"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Wednesday_13_14"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Thursday_13_14"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Friday_13_14"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+
+
+        <!--20:30-21:50-->
+        <!--&lt;!&ndash;[S105]软件工程\n(薛建民_0978)\nBOU01教学班&ndash;&gt;格式-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第15节-第16节\n20:30-21:50\n(週五)\n19:50-21:20"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText"
+            android:id="@+id/b_20_30_21_50"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Monday_15_16"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:text=""
+            android:id="@+id/b_Tuesday_15_16"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Wednesday_15_16"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Thursday_15_16"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/b_Friday_15_16"
+            android:layout_rowSpan="2"
+            tools:ignore="HardcodedText" />
+
+    </GridLayout>
+
+
+</ScrollView>
+
+
+
+</HorizontalScrollView>

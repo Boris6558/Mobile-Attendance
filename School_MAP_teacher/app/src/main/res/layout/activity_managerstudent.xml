@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/select_classes_spinner"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_width="120dp" />
+
+    <TextView
+        android:text="选择任教课程："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/select_classes_spinner" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="31dp"
+        android:id="@+id/tip" />
+
+    <Button
+        android:text="請假列表"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_classes_spinner"
+        android:layout_alignEnd="@+id/tip"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:text="考勤状态"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/button"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

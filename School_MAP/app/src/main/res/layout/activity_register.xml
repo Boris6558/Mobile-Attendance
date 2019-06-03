@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+    tools:ignore="Deprecated">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SIM_textview"
+        android:text="SIM:"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam"
+        android:textSize="18sp"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_alignBottom="@+id/SIM_editText"
+        android:layout_toLeftOf="@+id/SIM_editText"
+        android:layout_toStartOf="@+id/SIM_editText"
+        android:layout_x="35dp"
+        android:layout_y="145dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/stu_number_editText"
+        android:hint="输入学号"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,RelativeOverlap,TextFields"
+        android:textSize="14sp"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/SIM_editText"
+        android:layout_alignStart="@+id/SIM_editText"
+        android:layout_x="119dp"
+        android:layout_y="57dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stu_number_textview"
+        android:text="学号:"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/stu_number_editText"
+        android:layout_alignLeft="@+id/SIM_textview"
+        android:layout_alignStart="@+id/SIM_textview"
+        android:layout_x="35dp"
+        android:layout_y="57dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/SIM_editText"
+        android:editable="false"
+        tools:ignore="Deprecated,ObsoleteLayoutParam"
+        android:textSize="14sp"
+        android:layout_marginTop="73dp"
+        android:layout_below="@+id/stu_number_editText"
+        android:layout_alignRight="@+id/regist_button"
+        android:layout_alignEnd="@+id/regist_button"
+        android:layout_x="119dp"
+        android:layout_y="133dp" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="14dp"
+        android:layout_y="341dp"
+        android:id="@+id/tip_textView"
+        tools:ignore="ObsoleteLayoutParam" />
+
+    <TextView
+        android:text="*"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="9dp"
+        android:layout_y="60dp"
+        android:id="@+id/xing_textView"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:text="提交"
+        android:layout_width="109dp"
+        android:layout_height="51dp"
+        android:id="@+id/regist_button"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="81dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_below="@+id/SIM_editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_x="214dp"
+        android:layout_y="228dp" />
+
+
+</AbsoluteLayout>

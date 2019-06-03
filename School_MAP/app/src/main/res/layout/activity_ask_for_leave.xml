@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="Deprecated">
+
+    <TextView
+        android:text="请选择教学班:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="19dp"
+        android:id="@+id/select_classes"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam"
+        android:layout_x="21dp"
+        android:layout_y="17dp" />
+
+    <Spinner
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/select_classes"
+        android:layout_toRightOf="@+id/select_classes"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/select_classes_spinner"
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded"
+        android:layout_x="152dp"
+        android:layout_y="5dp" />
+
+    <TextView
+        android:text="任课老师："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/teacher_tv"
+        android:textSize="18sp"
+        android:layout_below="@+id/select_classes_spinner"
+        android:layout_toLeftOf="@+id/select_classes_spinner"
+        android:layout_toStartOf="@+id/select_classes_spinner"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam"
+        android:layout_x="24dp"
+        android:layout_y="49dp" />
+
+    <TextView
+        android:text="请假理由："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/reason_textView"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam"
+        android:layout_x="24dp"
+        android:layout_y="107dp"
+        android:layout_below="@+id/teacher_tv"
+        android:layout_alignLeft="@+id/teacher_tv"
+        android:layout_alignStart="@+id/teacher_tv" />
+
+    <EditText
+        android:layout_width="296dp"
+        tools:ignore="ObsoleteLayoutParam,TextFields"
+        android:layout_x="27dp"
+        android:layout_y="149dp"
+        android:layout_below="@+id/reason_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_height="223dp"
+        android:id="@+id/reason_edittext"
+        android:background="@drawable/bg_edittext"
+        android:gravity="start"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="14dp"
+        android:layout_y="387dp"
+        android:id="@+id/reason_tip"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="145dp"
+        android:layout_y="54dp"
+        android:id="@+id/teacher_textv"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:text="提交"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reason_button"
+        android:layout_x="238dp"
+        android:layout_y="395dp"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,UnknownId"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText6"
+        android:layout_alignEnd="@+id/editText6"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/button_style"
+        />
+
+    <Button
+        android:text="我已提交"
+        android:layout_width="195dp"
+        android:layout_height="33dp"
+        android:id="@+id/hasreason"
+        android:layout_x="134dp"
+        android:layout_y="100dp"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,UnknownId"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText6"
+        android:layout_alignEnd="@+id/editText6"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/button_style" />
+
+</AbsoluteLayout>

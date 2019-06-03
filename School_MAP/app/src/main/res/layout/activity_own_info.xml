@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize"
+        android:fillViewport="true">
+
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            tools:ignore="Deprecated,ScrollViewSize"
+            android:layout_height="match_parent"
+            android:id="@+id/ablayout">
+
+            <ImageView
+            app:srcCompat="@drawable/sunzhongshan"
+            android:id="@+id/imageView"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+            <TextView
+            android:text="学号:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_stunumbertip"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam"
+            android:textStyle="normal|bold"
+
+            android:layout_below="@+id/txt_nametip"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_x="98dp"
+            android:layout_y="16dp" />
+
+            <TextView
+            android:text="姓名:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_nametip"
+            android:layout_marginTop="9dp"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam"
+            android:textStyle="normal|bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_x="98dp"
+            android:layout_y="52dp" />
+
+            <TextView
+            android:text="null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_stunumber"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam"
+            android:layout_alignBaseline="@+id/txt_stunumbertip"
+            android:layout_alignBottom="@+id/txt_stunumbertip"
+            android:layout_alignLeft="@+id/txt_name"
+            android:layout_alignStart="@+id/txt_name"
+            android:layout_x="162dp"
+            android:layout_y="14dp" />
+
+            <TextView
+            android:text="null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_name"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam"
+            android:layout_alignBaseline="@+id/txt_nametip"
+            android:layout_alignBottom="@+id/txt_nametip"
+            android:layout_toRightOf="@+id/txt_nametip"
+            android:layout_toEndOf="@+id/txt_nametip"
+            android:layout_x="162dp"
+            android:layout_y="52dp" />
+
+            <TextView
+            android:text="查看课表"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_see_classes"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,UnknownId"
+            android:textAllCaps="false"
+            android:textColor="#0000ff"
+            android:textSize="18sp"
+            android:layout_below="@+id/txt_stunumber"
+            android:layout_alignLeft="@+id/signin_button"
+            android:layout_alignStart="@+id/signin_button"
+            android:layout_marginTop="32dp"
+            android:layout_x="295dp"
+            android:layout_y="97dp" />
+
+            <Button
+                android:text="..."
+                android:layout_width="55dp"
+                android:layout_height="28dp"
+                android:layout_x="305dp"
+                android:layout_y="664dp"
+                android:id="@+id/button4"
+                tools:ignore="HardcodedText" />
+
+            <Button
+            android:text="签到"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signin_button"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam"
+            android:background="@drawable/button_style"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_below="@+id/signin_zhuangtai"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_x="279dp"
+            android:layout_y="182dp" />
+
+            <TextView
+            android:text="签到状态："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_see_classes"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/signin_zhuangtai"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam"
+            android:layout_x="17dp"
+            android:layout_y="152dp" />
+
+            <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/signin_bg"
+            android:background="#ff0000"
+            android:layout_width="30dp"
+            android:layout_above="@+id/text_current_course"
+            android:layout_alignLeft="@+id/text_coursename"
+            android:layout_alignStart="@+id/text_coursename"
+            android:layout_marginBottom="7dp"
+            android:layout_x="38dp"
+            android:layout_y="188dp"
+            tools:ignore="ObsoleteLayoutParam" />
+
+            <TextView
+            android:text="当前课程:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_current_course"
+            android:layout_alignBottom="@+id/signin_button"
+            android:layout_alignRight="@+id/signin_bg"
+            android:layout_alignEnd="@+id/signin_bg"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam"
+            android:layout_x="19dp"
+            android:layout_y="226dp" />
+
+            <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_current_course"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_marginTop="14dp"
+            android:id="@+id/text_coursename"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam"
+            android:layout_x="32dp"
+            android:layout_y="261dp" />
+
+            <TextView
+                android:text="旷课次数："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="153dp"
+                android:layout_y="224dp"
+                android:id="@+id/textView7"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:text="請假次數："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="145dp"
+                android:layout_y="152dp"
+                android:id="@+id/textView5"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="175dp"
+                android:layout_y="185dp"
+                android:id="@+id/ask_levea_count"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="177dp"
+                android:layout_y="262dp"
+                android:id="@+id/absentee_count"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:text="現在是"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="19dp"
+                android:layout_y="121dp"
+                android:id="@+id/textView"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:text="第"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="68dp"
+                android:layout_y="121dp"
+                android:id="@+id/tv_di"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="1"
+                android:ems="10"
+                android:layout_x="89dp"
+                android:layout_y="112dp"
+                android:id="@+id/ed_1to16"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="141dp"
+                android:layout_y="121dp"
+                android:id="@+id/tv_jie"
+                android:text="节"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:text="(1-16)必填"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="173dp"
+                android:layout_y="122dp"
+                android:id="@+id/textView6"
+                tools:ignore="HardcodedText" />
+
+
+        </AbsoluteLayout>
+
+    </ScrollView>
+</HorizontalScrollView>
